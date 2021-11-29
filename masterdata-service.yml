@@ -1,0 +1,21 @@
+       
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/olx-masterdata
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: Abhijit1#
+  jpa:
+#  "update" will automatically create tables no need to manually add tables to db in mysql
+    hibernate.ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+#  for MongoDB
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: zendb
+  application:
+    name: masterdata-service
